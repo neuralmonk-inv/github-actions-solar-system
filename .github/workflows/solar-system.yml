@@ -37,6 +37,9 @@ jobs:
             name: Mocha-Test-Result
             path: test-results.xml
 
+        - name: Workflow Complete
+          run: echo "Workflow is done!"
+
 
 
 
