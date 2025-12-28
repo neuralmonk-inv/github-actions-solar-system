@@ -40,6 +40,12 @@ jobs:
         - name: Workflow Complete
           run: echo "Workflow is done!"
 
+        - name : Archive test results
+          uses: actions/upload-artifact@v4
+          with:
+            name: Mocha-Test-Result
+            path: test-results.xml
+
 
 
 
