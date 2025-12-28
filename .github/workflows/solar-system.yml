@@ -36,15 +36,13 @@ jobs:
           with:
             name: Mocha-Test-Result
             path: test-results.xml
+            if-no-files-found: warn
+            compression-level: 6
+            overwrite: true
+            include-hidden-files: false
 
         - name: Workflow Complete
           run: echo "Workflow is done!"
-
-        - name : Archive test results
-          uses: actions/upload-artifact@v4
-          with:
-            name: Mocha-Test-Result
-            path: test-results.xml
 
 
 
