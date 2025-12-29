@@ -72,10 +72,6 @@ jobs:
           with:
             name: Code-Coverage-Reports
             path: coverage
-            if-no-files-found: warn
-            compression-level: 6
-            overwrite: true
-            include-hidden-files: false
 
         - name: Coverage Complete
           run: echo "✅ Code coverage analysis complete!"
